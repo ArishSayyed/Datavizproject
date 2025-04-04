@@ -1,0 +1,10 @@
+Domain,API access,Hosted access (no API),Open access (non-commercial),Open access (restricted use),Open access (unrestricted),Unreleased
+Biology,0.0,0.0,3.0,0.0,14.0,6.0
+Games,0.0,0.0,2.0,0.0,2.0,22.0
+Image generation,4.0,0.0,2.0,1.0,3.0,3.0
+Language,13.0,7.0,14.0,14.0,70.0,107.0
+"Multimodal,Language,Vision",5.0,0.0,2.0,3.0,2.0,3.0
+Robotics,0.0,0.0,0.0,0.0,2.0,6.0
+Speech,0.0,0.0,0.0,0.0,5.0,6.0
+Vision,0.0,0.0,9.0,0.0,27.0,22.0
+"Vision,Image generation",0.0,0.0,2.0,0.0,3.0,2.0

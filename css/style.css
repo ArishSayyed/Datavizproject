@@ -1,0 +1,60 @@
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  svg {
+    width: 100% !important;
+    height: auto;
+  }
+  
+  .d3-tooltip {
+    z-index: 9999;
+    position: absolute;
+    padding: 6px 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar-toggler {
+    z-index: 1051;
+  }
+  
+  /* Always hide nav links unless toggled via hamburger */
+  .navbar-collapse {
+    display: none !important;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  .navbar-collapse.show {
+    display: block !important;
+  }
+  
+  @media (max-width: 767px) {
+    h2, h4, h5, p {
+      text-align: center;
+    }
+  
+    .row > .col-md-8,
+    .row > .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  }
+  
