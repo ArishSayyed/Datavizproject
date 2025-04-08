@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>D3 Web App</title>
+  <title>Who’s Building the Future? Mapping the Global Landscape of AI Model Development</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <style>
@@ -102,15 +102,16 @@
       <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#Intro">D3 Viz App</a>
+      <a class="navbar-brand" href="#Intro">Who’s Building the Future?</a>
     </div>
   </nav>
 
   <!-- Intro Section -->
   <section id="Intro" class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light">
     <div class="text-center">
-      <h1>Welcome to My D3 Visualization Project</h1>
-      <p class="lead">Scroll down to explore the data</p>
+      <h1>Who’s Building the Future?</h1>
+      <p class="lead">Mapping the Global Landscape of AI Model Development</p>
+      <p class="mt-4 px-3">This project explores the distribution of AI models across domains, organizations, and countries. It visualizes patterns in accessibility and highlights key players building today's most notable models. The data is sourced from <em>Epoch AI</em>'s database of notable machine learning models — selected based on citation count, benchmark performance, historic relevance, and usage.</p>
     </div>
   </section>
 
@@ -211,13 +212,15 @@
   <section id="About" class="container-fluid py-5">
     <div class="container">
       <h2>About This Project</h2>
-      <p>This project uses D3.js to visualize interesting data insights. Built with Bootstrap, D3, and love.</p>
+      <p>This dashboard visualizes the global development of influential AI models. The data highlights trends by domain, organization, and country, and investigates how accessible or restricted these models are. Built using D3.js, Bootstrap, and custom JavaScript, this tool empowers exploration through interaction.</p>
+      <p><strong>About the dataset:</strong> The database focuses on notable machine learning models, which meet at least one of the following: (i) state-of-the-art improvement on a recognized benchmark, (ii) highly cited (1000+), (iii) historical relevance, or (iv) significant usage. Models were selected from Papers with Code, literature reviews, academic sources, and expert suggestions. Additional methodology details can be found in Epoch AI's online resource.</p>
+      <p><em>Source:</em> Epoch AI, ‘Data on Notable AI Models’. Published online at <a href="https://epochai.org/data/notable-ai-models" target="_blank">epochai.org</a>. Accessed 8 Oct 2024.</p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 D3 Visualization Project</p>
+    <p class="mb-0">&copy; 2025 Who’s Building the Future?</p>
   </footer>
 
   <!-- Scripts -->
@@ -228,7 +231,6 @@
       sidebar.classList.toggle("active");
       overlay.classList.toggle("show");
     }
-
     function closeSidebar() {
       document.getElementById("mySidebar").classList.remove("active");
       document.getElementById("sidebarOverlay").classList.remove("show");
@@ -240,4 +242,3 @@
   <script src="js/accessibility.js"></script>
 </body>
 </html>
-
