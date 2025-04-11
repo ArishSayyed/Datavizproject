@@ -15,6 +15,7 @@
     <a href="#Intro" onclick="closeSidebar()">Intro</a>
     <a href="#Viz1" onclick="closeSidebar()">Landscape Overview</a>
     <a href="#Viz2" onclick="closeSidebar()">Accessibility</a>
+    <a href="#Viz3" onclick="closeSidebar()">A 360° View of AI Strength</a>
     <a href="#About" onclick="closeSidebar()">About</a>
   </div>
 
@@ -24,19 +25,28 @@
       <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#Intro">Who’s Building the Future?</a>
+      <a class="navbar-brand mx-auto text-center" href="#Intro" style="position: absolute; left: 50%; transform: translateX(-50%);">
+        Who’s Building the Future?
+      </a>
     </div>
   </nav>
 
-  <!-- Intro -->
-  <section id="Intro" class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light">
-    <div class="text-center px-4">
-      <h1>Who’s Building the Future?</h1>
-      <p class="lead">Mapping the Global Landscape of AI Model Development</p>
-      <p>This project explores the distribution of AI models across domains, organizations, and countries. It visualizes patterns in accessibility and highlights key players building today's most notable models.</p>
-      <p>The data is sourced from Epoch AI's database of notable machine learning models — selected based on citation count, benchmark performance, historic relevance, and usage.</p>
-    </div>
-  </section>
+    <!-- Intro Section -->
+    <section id="Intro" class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light">
+      <div class="text-center px-3" style="max-width: 800px;">
+        <h1 class="mb-3">Who’s Building the Future?</h1>
+        <h4 class="mb-4">Mapping the Global Landscape of AI Model Development</h4>
+        <p class="lead">
+          This dashboard presents a global analysis of AI development, focusing exclusively on <strong>Notable AI models</strong>—those that have achieved state-of-the-art performance, are highly cited, historically significant, or widely adopted.
+        </p>
+        <p class="lead">
+          Through interactive visualizations, we explore how countries and organizations contribute to AI across domains like talent, infrastructure, accessibility, and investment. The radar chart allows for side-by-side country comparisons across key AI indicators, offering a comprehensive view of national strengths.
+        </p>
+        <p class="lead">
+          By highlighting the most impactful models and the forces behind them, this project reveals the evolving geography of AI innovation.
+        </p>
+      </div>
+    </section>
 
   <!-- Viz1 Section -->
   <section id="Viz1" class="container-fluid py-5">
@@ -173,19 +183,36 @@
 
 
 
-  <!-- About -->
-  <section id="About" class="container-fluid py-5 bg-light">
-    <div class="container">
-      <h2>About This Project</h2>
-      <p>This dashboard visualizes the global development of influential AI models. It highlights key domains, organizations, and countries contributing to AI innovation and maps their model accessibility strategies.</p>
-      <p><strong>Dataset:</strong> Focused on notable ML models (state-of-the-art, cited 1000+, historical, high usage). Compiled from Papers with Code, literature, and expert reviews.</p>
-      <p><em>Source:</em> Epoch AI, <a href="https://epochai.org/data/notable-ai-models" target="_blank">epochai.org/data/notable-ai-models</a>. Accessed Oct 2024.</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="About" class="container-fluid py-5 bg-light">
+      <div class="container">
+        <h2>About This Project</h2>
+        <p>This project is my submission for the <b>Introduction to Information Visualization class at Temple University under Prof. Stepehen MacNeil (Steve)</b> </p>
+        <p>This project uses D3.js to visualize AI development across countries and organizations. It integrates insights from several key datasets:</p>
+
+        <h5 class="mt-4">1. Notable AI Models Dataset (Epoch AI)</h5>
+        <p>This database includes state-of-the-art, historically relevant, and widely cited machine learning models. Data was compiled from literature reviews, Papers With Code, and expert recommendations. Retrieved from: <a href="https://epochai.org/data/notable-ai-models" target="_blank">epochai.org</a></p>
+
+        <h5 class="mt-4">2. Global AI Index (Kaggle / Tortoise Media)</h5>
+        <p>The dataset includes AI rankings across 62 countries, measured by 7 indicators: Talent, Infrastructure, Operating Environment, Research, Development, Government Strategy, and Commercial activity. These are derived from over 140 sub-indicators. Categories are grouped as follows:</p>
+        <ul>
+          <li><strong>Implementation:</strong> Talent, Infrastructure, Operating Environment</li>
+          <li><strong>Innovation:</strong> Research, Development</li>
+          <li><strong>Investment:</strong> Government Strategy, Commercial</li>
+        </ul>
+        <p>Used in: Radar Chart on AI Strength by Country. Retrieved from: <a href="https://www.kaggle.com/datasets/katerynameleshenko/ai-index" target="_blank">Kaggle data - AI Index</a></p>
+
+        <h5 class="mt-4">3. Scholarly Publications (CSET, Our World in Data)</h5>
+        <p>This dataset includes English- and Chinese-language AI research output from 2013–2023: journal articles, conference papers, books, and theses. It was last updated July 2024 and will be refreshed annually. Source: Center for Security and Emerging Technology (CSET). Retrieved from: <a href="https://ourworldindata.org/grapher/annual-scholarly-publications-on-artificial-intelligence#reuse-this-work" target="_blank">Our World in data - Publications in AI</a></p>
+
+        <h5 class="mt-4">4. AI Private Investment Data (Statista)</h5>
+        <p>This dataset details total private investment in artificial intelligence across selected countries from 2013 to 2024. It provides insight into national funding intensity and the financial commitment of private sectors to AI advancement. Retrieved from: <a href="https://www.statista.com/statistics/1472607/private-investments-ai-in-selected-countries/" target="_blank">Statista - Total private investments in artificial intelligence (AI) in selected countries</a></p>
+      </div>
+    </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 Who’s Building the Future?</p>
+    <p class="mb-0">2025 Who’s Building the Future?</p>
   </footer>
 
   <!-- Scripts -->
@@ -207,6 +234,7 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/accessibility.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-interpolate-path@2.0.1/build/d3-interpolate-path.min.js"></script>
   <script src="js/radar.js"></script>
 </body>
 </html>

@@ -1,3 +1,19 @@
+/* Intro styling*/
+#Intro h1 {
+  font-size: 2.5rem;
+}
+
+#Intro h4 {
+  font-weight: 400;
+  color: #555;
+}
+
+#Intro p.lead {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
 /* Sidebar Styles */
 .sidebar {
   height: 100%;
@@ -88,15 +104,3 @@
   margin: 20px auto;
 }
 
-#Viz3 #radar-chart svg {
-  max-width: 100%;
-}
-
-#Viz3 .form-select {
-  min-width: 100%;
-}
-
-#Viz3 .legend-item {
-  display: inline-block;
-  margin: 0 10px;
-}
