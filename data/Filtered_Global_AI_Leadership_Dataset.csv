@@ -1,0 +1,200 @@
+,Country,Model Count,Publications,Investment (USD Billion)
+0,United States,562.0,183865.0,470.92
+1,China,99.0,332093.0,119.32
+2,United Kingdom,79.0,55994.0,28.17
+4,Canada,64.0,31577.0,15.31
+5,Germany,32.0,49287.0,13.27
+6,France,23.0,29461.0,11.1
+7,Switzerland,16.0,13406.0,3.9
+8,Korea (Republic of),15.0,0.0,0.0
+9,Hong Kong,13.0,0.0,0.0
+10,Japan,12.0,38355.0,5.89
+11,Israel,11.0,6961.0,14.96
+12,Singapore,11.0,13318.0,7.27
+13,Australia,7.0,25530.0,3.99
+14,Czechia,6.0,4692.0,0.0
+15,Netherlands,6.0,15678.0,0.0
+16,Finland,4.0,5851.0,0.0
+17,United Arab Emirates,3.0,6321.0,3.67
+18,Austria,3.0,7127.0,0.0
+19,India,3.0,117857.0,11.29
+20,Poland,3.0,9227.0,0.0
+21,Ireland,2.0,4505.0,0.0
+22,Belgium,2.0,7250.0,0.0
+23,Italy,2.0,31015.0,0.0
+24,Taiwan,2.0,14389.0,0.0
+25,Spain,2.0,21074.0,0.0
+26,Sweden,2.0,9294.0,7.27
+27,Russia,1.0,16007.0,0.0
+28,Saudi Arabia,1.0,14999.0,0.0
+29,Iran (Islamic Republic of),1.0,0.0,0.0
+30,Argentina,1.0,1206.0,0.0
+31,Norway,1.0,6460.0,0.0
+34,Global Partnership on Artificial Intelligence (CSET),0.0,607528.0,0.0
+36,"Five Eyes (Australia, Canada, New Zealand, UK, and the US) (CSET)",0.0,278034.0,0.0
+37,North America (CSET),0.0,209411.0,0.0
+38,ASEAN (Association of Southeast Asian Nations) (CSET),0.0,57029.0,0.0
+39,South Korea,0.0,33198.0,8.96
+40,Latin America and the Caribbean (CSET),0.0,29297.0,0.0
+41,Indonesia,0.0,18175.0,0.0
+42,Turkey,0.0,13525.0,0.0
+43,Brazil,0.0,13231.0,0.0
+44,Malaysia,0.0,12322.0,0.0
+45,Pakistan,0.0,11012.0,0.0
+46,Iran,0.0,10663.0,0.0
+47,Egypt,0.0,7521.0,0.0
+48,Bangladesh,0.0,7399.0,0.0
+49,Greece,0.0,7312.0,0.0
+50,Portugal,0.0,7230.0,0.0
+51,Vietnam,0.0,6937.0,0.0
+52,Mexico,0.0,6095.0,0.0
+53,Iraq,0.0,6040.0,0.0
+54,Denmark,0.0,5560.0,0.0
+55,Thailand,0.0,4762.0,0.0
+56,Romania,0.0,4702.0,0.0
+57,Morocco,0.0,4434.0,0.0
+58,South Africa,0.0,3490.0,0.0
+59,Algeria,0.0,3419.0,0.0
+60,Ukraine,0.0,3402.0,0.0
+61,Tunisia,0.0,3187.0,0.0
+62,New Zealand,0.0,3045.0,0.0
+63,Hungary,0.0,2938.0,0.0
+64,Nigeria,0.0,2873.0,0.0
+65,Colombia,0.0,2830.0,0.0
+66,Jordan,0.0,2579.0,0.0
+67,Philippines,0.0,2421.0,0.0
+68,Qatar,0.0,2015.0,0.0
+69,Sri Lanka,0.0,1940.0,0.0
+70,Slovakia,0.0,1892.0,0.0
+71,Chile,0.0,1888.0,0.0
+72,Serbia,0.0,1761.0,0.0
+73,Croatia,0.0,1667.0,0.0
+74,Slovenia,0.0,1594.0,0.0
+75,Bulgaria,0.0,1548.0,0.0
+76,Ecuador,0.0,1530.0,0.0
+77,Peru,0.0,1489.0,0.0
+78,Cyprus,0.0,1410.0,0.0
+79,Ethiopia,0.0,1317.0,0.0
+80,Kazakhstan,0.0,1306.0,0.0
+81,Lebanon,0.0,1239.0,0.0
+82,Nepal,0.0,1112.0,0.0
+83,Luxembourg,0.0,1034.0,0.0
+84,Estonia,0.0,979.0,0.0
+85,Lithuania,0.0,948.0,0.0
+86,Oman,0.0,891.0,0.0
+87,Panama,0.0,817.0,0.0
+88,Yemen,0.0,757.0,0.0
+89,Kuwait,0.0,681.0,0.0
+90,Ghana,0.0,673.0,0.0
+91,Uzbekistan,0.0,670.0,0.0
+92,Kenya,0.0,548.0,0.0
+93,Bahrain,0.0,528.0,0.0
+94,North Macedonia,0.0,510.0,0.0
+95,Latvia,0.0,502.0,0.0
+96,Bosnia and Herzegovina,0.0,494.0,0.0
+97,Belarus,0.0,423.0,0.0
+98,Azerbaijan,0.0,391.0,0.0
+99,Malta,0.0,376.0,0.0
+100,Iceland,0.0,327.0,0.0
+101,Libya,0.0,308.0,0.0
+102,Myanmar,0.0,306.0,0.0
+103,Brunei,0.0,301.0,0.0
+104,Cuba,0.0,298.0,0.0
+105,Uruguay,0.0,293.0,0.0
+106,Sudan,0.0,282.0,0.0
+107,Costa Rica,0.0,251.0,0.0
+108,Tanzania,0.0,237.0,0.0
+109,Cameroon,0.0,234.0,0.0
+110,Uganda,0.0,225.0,0.0
+111,Mongolia,0.0,223.0,0.0
+112,Rwanda,0.0,204.0,0.0
+113,Venezuela,0.0,196.0,0.0
+114,Syria,0.0,194.0,0.0
+115,Cambodia,0.0,194.0,0.0
+116,Armenia,0.0,188.0,0.0
+117,Senegal,0.0,177.0,0.0
+118,Georgia,0.0,164.0,0.0
+119,Mauritius,0.0,163.0,0.0
+120,Albania,0.0,160.0,0.0
+121,South Sudan,0.0,157.0,0.0
+122,Burundi,0.0,153.0,0.0
+123,Fiji,0.0,147.0,0.0
+124,Montenegro,0.0,146.0,0.0
+125,Honduras,0.0,144.0,0.0
+126,Zimbabwe,0.0,142.0,0.0
+127,Afghanistan,0.0,137.0,0.0
+128,Botswana,0.0,135.0,0.0
+129,Tajikistan,0.0,133.0,0.0
+130,Jamaica,0.0,104.0,0.0
+131,Zambia,0.0,99.0,0.0
+132,Paraguay,0.0,95.0,0.0
+133,Kyrgyzstan,0.0,94.0,0.0
+134,Benin,0.0,92.0,0.0
+135,Mali,0.0,91.0,0.0
+136,Congo,0.0,82.0,0.0
+137,Bolivia,0.0,82.0,0.0
+138,Trinidad and Tobago,0.0,82.0,0.0
+139,Moldova,0.0,81.0,0.0
+140,Kosovo,0.0,74.0,0.0
+141,Guatemala,0.0,74.0,0.0
+142,Cote d'Ivoire,0.0,69.0,0.0
+143,Burkina Faso,0.0,65.0,0.0
+144,Namibia,0.0,59.0,0.0
+145,El Salvador,0.0,54.0,0.0
+146,Malawi,0.0,53.0,0.0
+147,Dominican Republic,0.0,51.0,0.0
+148,Liechtenstein,0.0,50.0,0.0
+149,Mozambique,0.0,48.0,0.0
+150,Madagascar,0.0,47.0,0.0
+151,Papua New Guinea,0.0,46.0,0.0
+152,North Korea,0.0,37.0,0.0
+153,Antigua and Barbuda,0.0,33.0,0.0
+154,Bhutan,0.0,30.0,0.0
+155,Eswatini,0.0,27.0,0.0
+156,Nicaragua,0.0,25.0,0.0
+157,Liberia,0.0,22.0,0.0
+158,Gabon,0.0,21.0,0.0
+159,Niger,0.0,21.0,0.0
+160,Togo,0.0,20.0,0.0
+161,Maldives,0.0,19.0,0.0
+162,Somalia,0.0,18.0,0.0
+163,Palau,0.0,15.0,0.0
+164,Mauritania,0.0,15.0,0.0
+165,Monaco,0.0,14.0,0.0
+166,Barbados,0.0,14.0,0.0
+167,Lesotho,0.0,14.0,0.0
+168,Grenada,0.0,14.0,0.0
+169,Gambia,0.0,13.0,0.0
+170,Laos,0.0,12.0,0.0
+171,Angola,0.0,12.0,0.0
+172,Bahamas,0.0,12.0,0.0
+173,Sierra Leone,0.0,9.0,0.0
+174,Eritrea,0.0,9.0,0.0
+175,Saint Kitts and Nevis,0.0,8.0,0.0
+176,East Timor,0.0,8.0,0.0
+177,Comoros,0.0,7.0,0.0
+178,Chad,0.0,6.0,0.0
+179,Bermuda,0.0,6.0,0.0
+180,Turkmenistan,0.0,5.0,0.0
+181,Haiti,0.0,5.0,0.0
+182,Sao Tome and Principe,0.0,4.0,0.0
+183,Belize,0.0,4.0,0.0
+184,Guinea,0.0,4.0,0.0
+185,Tonga,0.0,4.0,0.0
+186,Djibouti,0.0,3.0,0.0
+187,Tuvalu,0.0,3.0,0.0
+188,Guyana,0.0,3.0,0.0
+189,Dominica,0.0,3.0,0.0
+190,Central African Republic,0.0,3.0,0.0
+191,Seychelles,0.0,2.0,0.0
+192,Vatican,0.0,2.0,0.0
+193,Equatorial Guinea,0.0,2.0,0.0
+194,Micronesia (country),0.0,2.0,0.0
+195,Saint Lucia,0.0,2.0,0.0
+196,Vanuatu,0.0,1.0,0.0
+197,Kiribati,0.0,1.0,0.0
+198,Saint Vincent and the Grenadines,0.0,1.0,0.0
+199,Samoa,0.0,1.0,0.0
+200,Andorra,0.0,1.0,0.0
+201,San Marino,0.0,1.0,0.0
+202,Suriname,0.0,1.0,0.0

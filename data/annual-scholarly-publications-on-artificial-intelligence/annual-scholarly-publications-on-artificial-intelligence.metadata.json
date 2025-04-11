@@ -1,0 +1,34 @@
+{
+  "chart": {
+    "title": "Annual scholarly publications on artificial intelligence",
+    "subtitle": "English- and Chinese-language scholarly publications related to the development and application of AI. This includes journal articles, conference papers, repository publications (such as arXiv), books, and theses.",
+    "citation": "Center for Security and Emerging Technology (2024)",
+    "originalChartUrl": "https://ourworldindata.org/grapher/annual-scholarly-publications-on-artificial-intelligence?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "United States",
+      "United Kingdom",
+      "Germany",
+      "China",
+      "World"
+    ]
+  },
+  "columns": {
+    "Number of articles - Field: All": {
+      "titleShort": "Scholarly publications",
+      "titleLong": "Scholarly publications",
+      "descriptionShort": "English- and Chinese-language scholarly publications related to the development and application of AI. This includes journal articles, conference papers, repository publications (such as arXiv), books, and theses.",
+      "unit": "articles",
+      "timespan": "2013-2023",
+      "type": "Integer",
+      "owidVariableId": 954107,
+      "shortName": "num_articles__field_all",
+      "lastUpdated": "2024-07-16",
+      "nextUpdate": "2025-07-16",
+      "citationShort": "Center for Security and Emerging Technology (2024) – processed by Our World in Data",
+      "citationLong": "Center for Security and Emerging Technology (2024) – processed by Our World in Data. “Scholarly publications” [dataset]. Center for Security and Emerging Technology, “Country Activity Tracker: Artificial Intelligence” [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/954107.metadata.json"
+    }
+  },
+  "dateDownloaded": "2025-04-10",
+  "activeFilters": {}
+}

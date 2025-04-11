@@ -140,5 +140,6 @@ function renderStackedBarChart(svg, dataPath, categoryKey, width, height) {
   });
 }
 
-renderStackedBarChart(svg1, "data/model_accessibility_by_domain.csv", "Domain", width1, height1);
+renderStackedBarChart(svg1, "data/model_accessibility_by_top10_countries.csv", "Country (not repeating)", width1, height1);
 renderStackedBarChart(svg2, "data/model_accessibility_by_top10_orgs.csv", "Organization", width1, height1);
+

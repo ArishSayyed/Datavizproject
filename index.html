@@ -6,97 +6,19 @@
   <title>Who’s Building the Future? Mapping the Global Landscape of AI Model Development</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    html, body {
-      max-width: 100vw;
-      overflow-x: hidden;
-    }
-    svg {
-      width: 100% !important;
-      height: auto;
-    }
-    .d3-tooltip {
-      z-index: 9999;
-    }
-    .navbar {
-      justify-content: center;
-      min-height: 60px;
-    }
-    .navbar-brand {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    .sidebar {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      top: 0;
-      left: -250px;
-      background-color: #343a40;
-      padding-top: 60px;
-      transition: 0.3s;
-      z-index: 1051;
-    }
-    .sidebar a {
-      padding: 10px 20px;
-      text-decoration: none;
-      font-size: 18px;
-      color: white;
-      display: block;
-    }
-    .sidebar a:hover {
-      background-color: #495057;
-    }
-    .sidebar.active {
-      left: 0;
-    }
-    .navbar-toggler {
-      position: absolute;
-      left: 1rem;
-      z-index: 1052;
-    }
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.3);
-      z-index: 1050;
-      display: none;
-    }
-    .overlay.show {
-      display: block;
-    }
-    @media (max-width: 767px) {
-      h2, h4, h5, p {
-        text-align: center;
-      }
-      .row > .col-md-8,
-      .row > .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-      .row {
-        flex-direction: column;
-      }
-    }
-  </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50" tabindex="0">
-  <!-- Sidebar Overlay -->
-  <div id="sidebarOverlay" class="overlay" onclick="closeSidebar()"></div>
 
   <!-- Sidebar Navigation -->
+  <div id="sidebarOverlay" class="overlay" onclick="closeSidebar()"></div>
   <div id="mySidebar" class="sidebar">
     <a href="#Intro" onclick="closeSidebar()">Intro</a>
     <a href="#Viz1" onclick="closeSidebar()">Landscape Overview</a>
-    <a href="#Viz2" onclick="closeSidebar()">Accessibility and Openness</a>
+    <a href="#Viz2" onclick="closeSidebar()">Accessibility</a>
     <a href="#About" onclick="closeSidebar()">About</a>
   </div>
 
-  <!-- Navigation -->
+  <!-- Top Navbar -->
   <nav id="navbar" class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" onclick="toggleSidebar()">
@@ -106,115 +28,158 @@
     </div>
   </nav>
 
-  <!-- Intro Section -->
+  <!-- Intro -->
   <section id="Intro" class="container-fluid vh-100 d-flex align-items-center justify-content-center bg-light">
-    <div class="text-center">
+    <div class="text-center px-4">
       <h1>Who’s Building the Future?</h1>
       <p class="lead">Mapping the Global Landscape of AI Model Development</p>
-      <p class="mt-4 px-3">This project explores the distribution of AI models across domains, organizations, and countries. It visualizes patterns in accessibility and highlights key players building today's most notable models. The data is sourced from <em>Epoch AI</em>'s database of notable machine learning models — selected based on citation count, benchmark performance, historic relevance, and usage.</p>
+      <p>This project explores the distribution of AI models across domains, organizations, and countries. It visualizes patterns in accessibility and highlights key players building today's most notable models.</p>
+      <p>The data is sourced from Epoch AI's database of notable machine learning models — selected based on citation count, benchmark performance, historic relevance, and usage.</p>
     </div>
   </section>
 
-  <!-- Viz 1 Section -->
+  <!-- Viz1 Section -->
   <section id="Viz1" class="container-fluid py-5">
     <div class="container">
-      <h2 class="mb-5 text-center">Visualization 1: Landscape Overview</h2>
+      <h2 class="mb-5 text-center">Landscape Overview</h2>
 
-      <!-- Subsection 1 -->
+      <!-- Domains -->
       <div class="row mb-5 d-flex align-items-center">
         <div class="col-md-8">
           <h4>Top 15 AI Domains By Number Of Models</h4>
-          <svg id="chart1-1"></svg>
+          <svg id="chart1-1" width="800" height="400"></svg>
         </div>
         <div class="col-md-4">
           <h5>Key Insights</h5>
           <ul>
             <li>🧠 Language AI leads by a massive margin, followed by Vision.</li>
-            <li>🎮 Games, 🗣️ Speech, and 🧬 Biology are emerging but still niche.</li>
+            <li>🎮 Games, 🗣️ Speech, and 🧬 Biology are emerging domains.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Subsection 2 -->
+      <!-- Organizations -->
       <div class="row mb-5 d-flex align-items-center">
         <div class="col-md-8">
           <h4>Top 15 Organizations By Number Of AI Models</h4>
-          <svg id="chart1-2"></svg>
+          <svg id="chart1-2" width="800" height="400"></svg>
         </div>
         <div class="col-md-4">
           <h5>Key Insights</h5>
           <ul>
-            <li>🏢 Google, DeepMind, and OpenAI are at the forefront.</li>
-            <li>🎓 Stanford and other universities show academia–industry synergy.</li>
+            <li>🏢 Google, DeepMind, and OpenAI lead globally.</li>
+            <li>🎓 Institutions like Stanford show academia-industry synergy.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Subsection 3 -->
+      <!-- Countries -->
       <div class="row mb-5 d-flex align-items-center">
         <div class="col-md-8">
           <h4>Top 15 Countries By Number Of AI Models Produced</h4>
-          <svg id="chart1-3"></svg>
+          <svg id="chart1-3" width="800" height="400"></svg>
         </div>
         <div class="col-md-4">
           <h5>Key Insights</h5>
           <ul>
-            <li>🇺🇸 United States dominates the AI model landscape.</li>
-            <li>🇬🇧 UK, 🇨🇳 China, and 🇨🇦 Canada are also major contributors.</li>
-            <li>🌍 The rest of the top 15 shows global effort from Europe and Asia.</li>
+            <li>🇺🇸 US dominates, with 🇬🇧 UK, 🇨🇳 China, 🇨🇦 Canada contributing significantly.</li>
+            <li>🌍 Strong global presence across Europe and Asia.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Viz 2 Section -->
+  <!-- Viz2 Section -->
   <section id="Viz2" class="container-fluid py-5 bg-light">
     <div class="container">
-      <h2 class="mb-4 text-center">Part 2: Accessibility and Openness</h2>
+      <h2 class="mb-4 text-center">Model Accessibility</h2>
 
-      <!-- Subsection 1 -->
-      <div class="row mb-5 d-flex align-items-center">
-        <div class="col-md-8">
-          <h4>Model Accessibility by Domain</h4>
-          <svg id="chart2-1"></svg>
-        </div>
-        <div class="col-md-4">
-          <h5>Key Insights</h5>
-          <ul>
-            <li>🔓 Many domains rely heavily on open access models.</li>
-            <li>🔒 Language dominates even among unreleased models.</li>
-            <li>🎮 Games and 🧬 Biology are mostly unreleased or API limited.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Subsection 2 -->
+      <!-- By Organization -->
       <div class="row mb-5 d-flex align-items-center">
         <div class="col-md-8">
           <h4>Model Accessibility by Top 10 Organizations</h4>
-          <svg id="chart2-2"></svg>
+          <svg id="chart2-2" width="800" height="400"></svg>
         </div>
         <div class="col-md-4">
           <h5>Key Insights</h5>
           <ul>
-            <li>🏢 Most large organizations tend to withhold full open access.</li>
-            <li>📊 OpenAI uses a mix of API and restricted open models.</li>
-            <li>🎓 Universities lead in non-commercial open access.</li>
+            <li>🏢 Tech giants lead in production.</li>
+            <li>📦 Most models are closed-access.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- By Country -->
+      <div class="row mb-5 d-flex align-items-center">
+        <div class="col-md-8">
+          <h4>Model Accessibility by Top 10 Countries</h4>
+          <svg id="chart2-1" width="800" height="400"></svg>
+        </div>
+        <div class="col-md-4">
+          <h5>Key Insights</h5>
+          <ul>
+            <li>🌎 US leads in models across access types.</li>
+            <li>🇬🇧 UK and 🇨🇳 China follow with closed-access bias.</li>
+            <li>🌐 Canada and Switzerland show balance.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+ 
+<!-- Section 3: A 360° View of AI Strength -->
+<section id="Viz3" class="viz-section py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-4">A 360° View of AI Strength</h2>
+
+    <div class="row justify-content-center mb-3">
+      <div class="col-md-4">
+        <label for="country1-select" class="form-label">Select Country 1:</label>
+        <select id="country1-select" class="form-select"></select>
+      </div>
+      <div class="col-md-4">
+        <label for="country2-select" class="form-label">Select Country 2:</label>
+        <select id="country2-select" class="form-select"></select>
+      </div>
+    </div>
+
+    <div id="radar-legend" class="text-center mb-4"></div>
+
+    <div class="row align-items-start">
+      <!-- Radar Chart -->
+      <div class="col-lg-7 col-md-12 d-flex justify-content-center mb-4">
+        <div id="radar-chart"></div>
+      </div>
+
+      <!-- Description -->
+      <div class="col-lg-5 col-md-12">
+        <h5 class="mb-3">What the Axes Represent</h5>
+        <p><strong>Talent:</strong> Availability of skilled practitioners for AI.<br>
+        <strong>Infrastructure:</strong> Access to computing, electricity, internet.<br>
+        <strong>Operating Environment:</strong> Public support and regulations for AI.<br>
+        <strong>Research:</strong> Research activity in AI journals.<br>
+        <strong>Development:</strong> Core platform and algorithm development.<br>
+        <strong>Government Strategy:</strong> National-level policy and investment.<br>
+        <strong>Commercial:</strong> Startups and market-based AI innovation.<br>
+        <strong>Notable Models:</strong> Number of significant AI models developed.<br>
+        <strong>Publications:</strong> Academic publishing volume.<br>
+        <strong>Investment (USD Billion):</strong> Financial investment in AI.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
-  <!-- About Section -->
-  <section id="About" class="container-fluid py-5">
+
+
+  <!-- About -->
+  <section id="About" class="container-fluid py-5 bg-light">
     <div class="container">
       <h2>About This Project</h2>
-      <p>This dashboard visualizes the global development of influential AI models. The data highlights trends by domain, organization, and country, and investigates how accessible or restricted these models are. Built using D3.js, Bootstrap, and custom JavaScript, this tool empowers exploration through interaction.</p>
-      <p><strong>About the dataset:</strong> The database focuses on notable machine learning models, which meet at least one of the following: (i) state-of-the-art improvement on a recognized benchmark, (ii) highly cited (1000+), (iii) historical relevance, or (iv) significant usage. Models were selected from Papers with Code, literature reviews, academic sources, and expert suggestions. Additional methodology details can be found in Epoch AI's online resource.</p>
-      <p><em>Source:</em> Epoch AI, ‘Data on Notable AI Models’. Published online at <a href="https://epochai.org/data/notable-ai-models" target="_blank">epochai.org</a>. Accessed 8 Oct 2024.</p>
+      <p>This dashboard visualizes the global development of influential AI models. It highlights key domains, organizations, and countries contributing to AI innovation and maps their model accessibility strategies.</p>
+      <p><strong>Dataset:</strong> Focused on notable ML models (state-of-the-art, cited 1000+, historical, high usage). Compiled from Papers with Code, literature, and expert reviews.</p>
+      <p><em>Source:</em> Epoch AI, <a href="https://epochai.org/data/notable-ai-models" target="_blank">epochai.org/data/notable-ai-models</a>. Accessed Oct 2024.</p>
     </div>
   </section>
 
@@ -224,12 +189,14 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/accessibility.js"></script>
   <script>
     function toggleSidebar() {
-      const sidebar = document.getElementById("mySidebar");
-      const overlay = document.getElementById("sidebarOverlay");
-      sidebar.classList.toggle("active");
-      overlay.classList.toggle("show");
+      document.getElementById("mySidebar").classList.toggle("active");
+      document.getElementById("sidebarOverlay").classList.toggle("show");
     }
     function closeSidebar() {
       document.getElementById("mySidebar").classList.remove("active");
@@ -240,5 +207,6 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/accessibility.js"></script>
+  <script src="js/radar.js"></script>
 </body>
 </html>

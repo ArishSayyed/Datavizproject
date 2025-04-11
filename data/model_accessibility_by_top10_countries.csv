@@ -1,0 +1,11 @@
+Country (not repeating),API access,Hosted access (no API),Open access (non-commercial),Open access (restricted use),Open access (unrestricted),Unreleased
+Canada,1,0,0,0,0,9
+China,3,2,3,10,17,10
+"China, United States of America",0,0,0,0,0,3
+Germany,0,0,0,0,4,1
+Japan,0,0,1,0,1,1
+Korea (Republic of),0,0,2,0,1,2
+Multinational,3,0,0,1,10,12
+UK and Northern ireland,0,0,0,0,3,32
+United States of America,20,5,23,7,68,87
+"United States of America, Multinational",0,0,0,0,5,5
