@@ -26,8 +26,10 @@ const renderBarChart = (data, selector, xKey, yKey) => {
     .style("opacity", 0);
 
   const showTooltip = (event, d) => {
+    const total = d3.sum(data, d => d[yKey]);
+    const percentage = ((d[yKey] / total) * 100).toFixed(1);
     tooltip.style("opacity", 1)
-      .html(`<strong>${d[xKey]}</strong><br/>Models: ${d[yKey]}`)
+      .html(`<strong>${d[xKey]}</strong><br/>Models: ${d[yKey]}<br/>(${percentage}%)`)
       .style("left", `${event.pageX + 10}px`)
       .style("top", `${event.pageY - 28}px`);
   };

@@ -2,3 +2,5 @@
 2. https://www.kaggle.com/datasets/katerynameleshenko/ai-index
 3. https://ourworldindata.org/grapher/annual-scholarly-publications-on-artificial-intelligence
 4. https://www.statista.com/statistics/1472607/private-investments-ai-in-selected-countries/
+
+Radar chart ref: https://yangdanny97.github.io/blog/2019/03/01/D3-Spider-Chart

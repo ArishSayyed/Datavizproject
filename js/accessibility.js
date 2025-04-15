@@ -92,11 +92,20 @@ function renderStackedBarChart(svg, dataPath, categoryKey, width, height) {
         .attr("width", d => x(d[1]) - x(d[0]))
         .attr("height", y.bandwidth())
         .on("mouseover", (event, d) => {
+          const total = d3.sum(keys, k => d.data[k]);
+          const count = d[1] - d[0];
+          const percentage = ((count / total) * 100).toFixed(1);
           tooltip.transition().duration(200).style("opacity", 0.95);
-          tooltip.html(`<strong>${d.data[categoryKey]}</strong><br><em>${d.key}</em><br>Models: ${d[1] - d[0]}`)
-            .style("left", `${event.pageX + 10}px`)
-            .style("top", `${event.pageY - 28}px`);
+          tooltip.html(`
+            <strong>${d.data[categoryKey]}</strong><br>
+            <em>${d.key}</em><br>
+            Models: ${count}<br>
+            (${percentage}%)
+          `)
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 28}px`);
         })
+        
         .on("mouseout", () => {
           tooltip.transition().duration(300).style("opacity", 0);
         });
