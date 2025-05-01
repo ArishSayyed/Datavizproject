@@ -80,6 +80,16 @@ at **Temple University** under **Prof. Stephen MacNeil (Steve)**.
 
 ---
 
+## 💡 Lessons Learned
+
+- Gained proficiency in **D3.js** and modern JavaScript development
+- Designed **user interactivity** through tooltips, dropdowns, legends, and animations
+- Improved **data gathering and cleaning methods** for visualization datasets
+- Learned **responsive design principles** for visualizations on desktop and mobile
+- Practiced integrating **multiple charts** into a cohesive dashboard experience
+
+---
+
 ## ✨ Author
 
 Created with 💻 and 📊 by Arish Sayyed  
